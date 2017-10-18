@@ -1,0 +1,22 @@
+{
+  "name": "creator-docs",
+  "version": "1.6.1",
+  "description": "Documentation ===============",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gitbook install && gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocos-creator/creator-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cocos-creator/creator-docs/issues"
+  },
+  "homepage": "https://github.com/cocos-creator/creator-docs#readme"
+}
