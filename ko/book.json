@@ -1,0 +1,40 @@
+{
+    "structure": {
+        "summary": "SUMMARY.md",
+        "readme": "index.md"
+    },
+    "variables": {
+        "products": [
+            {
+                "name": "코코스 크리에이터",
+                "links": [
+                    {
+                        "name": "메뉴얼",
+                        "link": "http://docs.cocos.com/creator/manual/en"
+                    },
+                    {
+                        "name": "API",
+                        "link": "http://docs.cocos.com/creator/api/en"
+                    }  
+                ]
+            },
+            {
+                "name": "Cocos2d-x",
+                "links": [
+                    {
+                        "name": "메뉴얼",
+                        "link": "http://www.cocos.com/docs/native/"
+                    },
+                    {
+                        "name": "API",
+                        "link": "http://www.cocos.com/docs/native/"
+                    }
+                ]
+            },
+            {
+                "name": "AnySDK",
+                "link": "http://docs.anysdk.com/"
+            }  
+        ]
+    }   
+}
