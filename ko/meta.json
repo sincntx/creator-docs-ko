@@ -1,0 +1,858 @@
+{
+    "*": {
+        "menu": [
+            {
+                "name": "시작하기",
+                "link": "getting-started/index.html",
+                "submenu": [
+                    {
+                        "name": "소개",
+                        "link": "getting-started/introduction.html"
+                    },
+                    {
+                        "name": "설치와 실행",
+                        "link": "getting-started/install.html"
+                    },
+                    {
+                        "name": "대시보드",
+                        "link": "getting-started/dashboard.html"
+                    },
+                    {
+                        "name": "헬로 월드!",
+                        "link": "getting-started/hello-world.html"
+                    },
+                    {
+                        "name": "퀵스타트",
+                        "link": "getting-started/quick-start.html"
+                    },
+                    {
+                        "name": "코딩환경",
+                        "link": "getting-started/coding-setup.html"
+                    },
+                    {
+                        "name": "프로젝트 구조",
+                        "link": "getting-started/project-structure.html"
+                    },
+                    {
+                        "name": "에디터 사용하기",
+                        "link": "getting-started/basics/index.html",
+                        "submenu": [
+                            {
+                                "name": "에디터 개요",
+                                "link": "getting-started/basics/editor-overview.html"
+                            },
+                            {
+                                "name": "에셋",
+                                "link": "getting-started/basics/editor-panels/assets.html"
+                            },
+                            {
+                                "name": "씬",
+                                "link": "getting-started/basics/editor-panels/scene.html"
+                            },
+                            {
+                                "name": "노드 트리",
+                                "link": "getting-started/basics/editor-panels/node-tree.html"
+                            },
+                            {
+                                "name": "속성",
+                                "link": "getting-started/basics/editor-panels/properties.html"
+                            },
+                            {
+                                "name": "콘솔",
+                                "link": "getting-started/basics/editor-panels/console.html"
+                            },
+                            {
+                                "name": "설정",
+                                "link": "getting-started/basics/editor-panels/preferences.html"
+                            },
+                            {
+                                "name": "프로젝트 설정",
+                                "link": "getting-started/basics/editor-panels/project-settings.html"
+                            },                            
+                            {
+                                "name": "노드 라이브러리",
+                                "link": "getting-started/basics/editor-panels/node-library.html"
+                            },
+                            {
+                                "name": "툴바",
+                                "link": "getting-started/basics/toolbar.html"
+                            },
+                            {
+                                "name": "에디터 레이아웃",
+                                "link": "getting-started/basics/layout.html"
+                            },
+                            {
+                                "name": "미리보기와 빌드",
+                                "link": "getting-started/basics/preview-build.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cocos2d-x 유저 가이드",
+                        "link": "getting-started/cocos2d-x-guide.html"
+                    },
+                    {
+                        "name": "도움말과 지원",
+                        "link": "getting-started/support.html"
+                    }
+                ]
+            },
+            {
+                "name": "에셋 작업흐름",
+                "link": "asset-workflow/index.html",
+                "submenu": [
+                    {
+                        "name": "씬 관리",
+                        "link": "asset-workflow/scene-managing.html"
+                    },
+                    {
+                        "name": "텍스쳐",
+                        "link": "asset-workflow/sprite.html"
+                    },
+                    {
+                        "name": "프리팹",
+                        "link": "asset-workflow/prefab.html"
+                    },                    
+                    {
+                        "name": "아틀라스",
+                        "link": "asset-workflow/atlas.html"
+                    },
+                    {
+                        "name": "오토 아틀라스",
+                        "link": "asset-workflow/auto-atlas.html"
+                    },
+                    {
+                        "name": "라벨 아틀라스",
+                        "link": "asset-workflow/label-atlas.html"
+                    },
+                    {
+                        "name": "에셋 들여오기/내보내기",
+                        "link": "asset-workflow/import-export.html"
+                    },
+                    {
+                        "name": "텍스쳐 오토 트림",
+                        "link": "asset-workflow/trim.html"
+                    },
+                    {
+                        "name": "스크립트 파일",
+                        "link": "asset-workflow/script.html"
+                    },
+                    {
+                        "name": "폰트 에셋",
+                        "link": "asset-workflow/font.html"
+                    },
+                    {
+                        "name": "파티클 에셋",
+                        "link": "asset-workflow/particle.html"
+                    },
+                    {
+                        "name": "오디오 에셋",
+                        "link": "asset-workflow/audio-asset.html"
+                    },
+                    {
+                        "name": "스파인",
+                        "link": "asset-workflow/spine.html"
+                    },
+                    {
+                        "name": "드래곤본",
+                        "link": "asset-workflow/dragonbones.html"
+                    },
+                    {
+                        "name": "타일맵",
+                        "link": "asset-workflow/tiledmap.html"
+                    },
+                    {
+                        "name": "다른 에디터에서 프로젝트 들여오기",
+                        "link": "asset-workflow/project-import.html"
+                    }
+                ]
+            },
+            {
+                "name": "씬 빌딩 작업흐름",
+                "link": "content-workflow/index.html",
+                "submenu": [
+                    {
+                        "name": "노드와 컴포넌트",
+                        "link": "content-workflow/node-component.html"
+                    },
+                    {
+                        "name": "트랜스폼",
+                        "link": "content-workflow/transform.html"
+                    },
+                    {
+                        "name": "노드 트리",
+                        "link": "content-workflow/node-tree.html"
+                    },
+                    {
+                        "name": "씬 에디팅",
+                        "link": "content-workflow/scene-editing.html"
+                    }
+                ]
+            },
+            {
+                "name": "렌더러와 그래픽",
+                "link": "render/index.html",
+                "submenu": [
+                    {
+                        "name": "코어 렌더러",
+                        "link": "render/core-renderer.html"
+                    },
+                    {
+                        "name": "외부 에셋 렌더러",
+                        "link": "render/external-renderer.html"
+                    },
+                    {
+                        "name": "카메라",
+                        "link": "render/camera.html"
+                    },                    
+                    {
+                        "name": "그래픽 프로그래밍",
+                        "link": "render/graphics/index.html"
+                    },
+                    {
+                        "name": "렌더러 컴포넌트 레퍼런스",
+                        "submenu": [
+                            {
+                                "name": "스프라이트 레퍼런스",
+                                "link": "components/sprite.html"
+                            },
+                            {
+                                "name": "라벨 레퍼런스",
+                                "link": "components/label.html"
+                            },
+                            {
+                                "name": "마스크 레퍼런스",
+                                "link": "components/mask.html"
+                            },
+                            {
+                                "name": "모션스트릭 레퍼런스",
+                                "link": "components/motion-streak.html"
+                            },
+                            {
+                                "name": "파티클 시스템 레퍼런스",
+                                "link": "components/particle-system.html"
+                            },
+                            {
+                                "name": "타일맵 레퍼런스",
+                                "link": "components/tiledmap.html"
+                            },
+                            {
+                                "name": "스파인 레퍼런스",
+                                "link": "components/spine.html"
+                            },
+                            {
+                                "name": "드래곤본 레퍼런스",
+                                "link": "components/dragonbones.html"
+                            },
+                            {
+                                "name": "비디오 플레이어 레퍼런스",
+                                "link": "components/videoplayer.html"
+                            },
+                            {
+                                "name": "웹뷰 레퍼런스",
+                                "link": "components/webview.html"
+                            },
+                            {
+                                "name": "그래픽 레퍼런스",
+                                "link": "components/graphics.html"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "UI",
+                "link": "ui/index.html",
+                "submenu": [
+                    {
+                        "name": "다중 해상도 지원",
+                        "link": "ui/multi-resolution.html"
+                    },
+                    {
+                        "name": "위젯 정렬",
+                        "link": "ui/widget-align.html"
+                    },
+                    {
+                        "name": "늘릴 수 있는 UI 스프라이트",
+                        "link": "ui/sliced-sprite.html"
+                    },                    
+                    {
+                        "name": "라벨 레이아웃",
+                        "link": "ui/label-layout.html"
+                    },
+                    {
+                        "name": "UI 애니메이션",
+                        "link": "ui/ui-animation.html"
+                    },
+                    {
+                        "name": "레이아웃 컨테이너",
+                        "link": "ui/auto-layout.html"
+                    },
+                    {
+                        "name": "리스트와 데이터",
+                        "link": "ui/list-with-data.html"
+                    },
+                    {
+                        "name": "UI 컴포넌트",
+                        "link": "ui/ui-components.html",
+                        "submenu": [
+                        {
+                                "name": "캔버스 레퍼런스",
+                                "link": "components/canvas.html"
+                            },
+                            {
+                                "name": "위젯 레퍼런스",
+                                "link": "components/widget.html"
+                            },
+                            {
+                                "name": "버튼 레퍼런스",
+                                "link": "components/button.html"
+                            },
+                            {
+                                "name": "레이아웃 레퍼런스",
+                                "link": "components/layout.html"
+                            },
+                            {
+                                "name": "에디트박스 레퍼런스",
+                                "link": "components/editbox.html"
+                            },                    
+                            {
+                                "name": "리치텍스트 레퍼런스",
+                                "link": "components/richtext.html"
+                            },                    
+                            {
+                                "name": "스크롤뷰 레퍼런스",
+                                "link": "components/scrollview.html"
+                            },
+                            {
+                                "name": "스크롤바 레퍼런스",
+                                "link": "components/scrollbar.html"
+                            },
+                            {
+                                "name": "프로그레스바 레퍼런스",
+                                "link": "components/progress.html"
+                            },                    
+                            {
+                                "name": "토글 레퍼런스",
+                                "link": "components/toggle.html"
+                            },
+                            {
+                                "name": "토글그룹 레퍼런스",
+                                "link": "components/toggleGroup.html"
+                            },
+                            {
+                                "name": "슬라이더 레퍼런스",
+                                "link": "components/slider.html"
+                            },
+                            {
+                                "name": "페이지뷰 레퍼런스",
+                                "link": "components/pageview.html"
+                            },
+                            {
+                                "name": "페이지뷰 인디케이터 레퍼런스",
+                                "link": "components/pageviewindicator.html"
+                            },
+                            {
+                                "name": "블럭인풋이벤트 레퍼런스",
+                                "link": "components/block-input-events.html"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "스크립팅",
+                "link": "scripting/index.html",
+                "submenu": [
+                    {
+                        "name": "노드와 컴포넌트",
+                        "submenu": [
+                            {
+                                "name": "Use 컴포넌트",
+                                "link": "scripting/use-component.html"
+                            },
+                            {
+                                "name": "cc.Class",
+                                "link": "scripting/class.html"
+                            },
+                            {
+                                "name": "노드와 컴포넌트 접근하기",
+                                "link": "scripting/access-node-component.html"
+                            },
+                            {
+                                "name": "공용 노드와 컴포넌트 API",
+                                "link": "scripting/basic-node-api.html"
+                            },
+                            {
+                                "name": "컴포넌트 생명주기",
+                                "link": "scripting/life-cycle-callbacks.html"
+                            },
+                            {
+                                "name": "생성과 파괴",
+                                "link": "scripting/create-destroy.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "에셋 관리",
+                        "submenu": [
+                            {
+                                "name": "씬 관리",
+                                "link": "scripting/scene-managing.html"
+                            },
+                            {
+                                "name": "에셋 로딩",
+                                "link": "scripting/load-assets.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "이벤트",
+                        "submenu": [
+                            {
+                                "name": "이벤트 시스템",
+                                "link": "scripting/events.html"
+                            },
+                            {
+                                "name": "빌틘 이벤트",
+                                "link": "scripting/internal-events.html"
+                            },
+                            {
+                                "name": "플레이어 인풋",
+                                "link": "scripting/player-controls.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "액션",
+                        "link": "scripting/actions.html"
+                    },
+                    {
+                        "name": "액션 리스트",
+                        "link": "scripting/action-list.html"
+                    },
+                    {
+                        "name": "스케쥴러",
+                        "link": "scripting/scheduler.html"
+                    },
+                    {
+                        "name": "실행 순서",
+                        "link": "scripting/execution-order.html"
+                    },
+                    {
+                        "name": "네트워킹",
+                        "link": "scripting/network.html"
+                    },
+                    {
+                        "name": "풀링",
+                        "link": "scripting/pooling.html"
+                    },
+                    {
+                        "name": "스크립트 구조",
+                        "submenu": [
+                            {
+                                "name": "모듈러 스크립트",
+                                "link": "scripting/modular-script.html"
+                            },
+                            {
+                                "name": "플러그인 스크립트",
+                                "link": "scripting/plugin-scripts.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "자바스크립트 프리머",
+                        "link": "scripting/javascript-primer.html"
+                    },
+                    {
+                        "name": "CCClass 레퍼런스",
+                        "submenu": [
+                            {
+                                "name": "고급 CCClass",
+                                "link": "scripting/reference/class.html"
+                            },
+                            {
+                                "name": "속성",
+                                "link": "scripting/reference/attributes.html"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "애니메이션",
+                "link": "animation/index.html",
+                "submenu": [
+                    {
+                        "name": "소개",
+                        "link": "animation/animation.html"
+                    },
+                    {
+                        "name": "애니메이션 컴포넌트와 클립",
+                        "link": "animation/animation-clip.html"
+                    },
+                    {
+                        "name": "애니메이션 커브",
+                        "link": "animation/animation-curve.html"
+                    },
+                    {
+                        "name": "스프라이트 애니메이션",
+                        "link": "animation/sprite-animation.html"
+                    },
+                    {
+                        "name": "타임 커브",
+                        "link": "animation/time-curve.html"
+                    },
+                    {
+                        "name": "애니메이션 이벤트",
+                        "link": "animation/animation-event.html"
+                    },
+                    {
+                        "name": "애니메이션 스크립팅",
+                        "link": "animation/scripting-animation.html"
+                    },
+                    {
+                        "name": "애니메이션 컴포넌트 레퍼런스",
+                        "link": "components/animation.html"
+                    }                    
+                ]
+            },
+            {
+                "name": "Physics",
+                "link": "physics/index.html",
+                "submenu": [
+                    {
+                        "name": "충돌기",
+                        "link": "physics/collision/index.html",
+                        "submenu": [
+                            {
+                                "name": "충돌기 컴포넌트",
+                                "link": "physics/collision/edit-collider-component.html"
+                            },
+                            {
+                                "name": "충돌 그룹",
+                                "link": "physics/collision/collision-group.html"
+                            },
+                            {
+                                "name": "충돌 스크립팅",
+                                "link": "physics/collision/collision-manager.html"
+                            },
+                            {
+                                "name": "충돌기 컴포넌트 레퍼런스",
+                                "link": "components/collider.html"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "물리 엔진",
+                        "link": "physics/physics/index.html",
+                        "submenu": [{
+                                "name": "물리 매니저",
+                                "link": "physics/physics/physics-manager.html"
+                            },
+                            {
+                                "name": "강체",
+                                "link": "physics/physics/rigid-body.html"
+                            },
+                            {
+                                "name": "물리 충돌기",
+                                "link": "physics/physics/collider-component.html"
+                            },
+                            {
+                                "name": "접촉 콜백",
+                                "link": "physics/physics/contact-callback.html"
+                            },
+                            {
+                                "name": "조인트",
+                                "link": "physics/physics/joint-component.html"
+                            }
+                        ]
+                    }
+                ]
+            },            
+
+            {
+                "name": "오디오",
+                "link": "audio/index.html",
+                "submenu": [
+                    {
+                        "name": "오디오 재생",
+                        "link": "audio/audio.html"
+                    },
+                    {
+                        "name": "오디오 소스 컴포넌트 레퍼런스",
+                        "link": "components/audiosource.html"
+                    }
+                ]
+            },
+            {
+                "name": "게임 퍼블리싱",
+                "link": "publish/index.html",
+                "submenu": [
+                    {
+                        "name": "웹으로 퍼블리싱하기",
+                        "link": "publish/publish-web.html"
+                    },
+                    {
+                        "name": "네이티브 개발 환경",
+                        "link": "publish/setup-native-development.html"
+                    },
+                    {
+                        "name": "네이티브 플랫폼으로 퍼블리싱하기",
+                        "link": "publish/publish-native.html"
+                    },
+                    {
+                        "name": "네이티브 블랫폼 디버깅",
+                        "link": "publish/debug-native.html"
+                    },
+                    {
+                        "name": "커맨드 라인에서 퍼블리싱하기",
+                        "link": "publish/publish-in-command-line.html"
+                    },
+                    {
+                        "name": "프로젝트 빌드 템플릿 커스터마이징",
+                        "link": "publish/custom-project-build-template.html"
+                    }
+                ]
+            },
+            {
+                "name": "에디터 확장기능",
+                "link": "extension/index.html",
+                "submenu": [
+                    {
+                        "name": "확장기능 작업흐름",
+                        "submenu": [
+                            {
+                                "name": "당신의 첫번째 확장기능",
+                                "link": "extension/your-first-extension.html"
+                            },
+                            {
+                                "name": "설치와 공유하기",
+                                "link": "extension/install-and-share.html"
+                            },
+                            {
+                                "name": "IPC 소개",
+                                "link": "extension/introduction-to-ipc.html"
+                            },
+                            {
+                                "name": "진입 포인트",
+                                "link": "extension/entry-point.html"
+                            },
+                            {
+                                "name": "확장기능 작업흐름",
+                                "link": "extension/extension-workflow.html"
+                            },                            
+                            {
+                                "name": "메인메뉴 확장하기",
+                                "link": "extension/extends-main-menu.html"
+                            },
+                            {
+                                "name": "패널 빌드하기",
+                                "link": "extension/extends-panel.html"
+                            },
+                            {
+                                "name": "IPC 작업흐름",
+                                "link": "extension/ipc-workflow.html"
+                            },
+                            {
+                                "name": "간단한 패널로 작업하기",
+                                "link": "extension/define-simple-panel.html"
+                            },
+                            {
+                                "name": "i18n",
+                                "link": "extension/i18n.html"
+                            },
+                            {
+                                "name": "작업 디렉토리",
+                                "link": "extension/working-directory.html"
+                            },
+                            {
+                                "name": "코코스 스코어에 확장기능 제출하기",
+                                "link": "extension/submit-to-store.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "씬과 에셋 작업",
+                        "submenu": [
+                            {
+                                "name": "씬 스크립트",
+                                "link": "extension/scene-script.html"
+                            },
+                            {
+                                "name": "에셋 관리",
+                                "link": "extension/asset-management.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "패널 UI",
+                        "submenu": [
+                            {
+                                "name": "패널 만들기",
+                                "link": "extension/writing-your-panel.html"
+                            },
+                            {
+                                "name": "UI 키트",
+                                "link": "extension/using-ui-kit.html"
+                            },
+                            {
+                                "name": "UI 키트 확장",
+                                "link": "extension/extends-ui-kit.html"
+                            },
+                            {
+                                "name": "레이아웃 UI 요소",
+                                "link": "extension/layout-ui-element.html"
+                            },
+                            {
+                                "name": "Vue.js로 작업하기",
+                                "link": "extension/work-with-vue.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "속성 패널 확장",
+                        "submenu": [
+                            {
+                                "name": "인스펙터 확장기능",
+                                "link": "extension/extends-inspector.html"
+                            },
+                            {
+                                "name": "속성 확장기능",
+                                "link": "extension/extends-property.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "기즈모 확장기능",
+                        "submenu": [
+                            {
+                                "name": "기즈모 커스터마이징",
+                                "link": "extension/custom-gizmo.html"
+                            },
+                            {
+                                "name": "고급 기즈모",
+                                "link": "extension/custom-gizmo-advance.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "에디터 API",
+                        "link": "extension/api/index.html",
+                        "submenu": [
+                            {
+                                "name": "에셋 DB 모듈 (메인)",
+                                "link": "extension/api/asset-db/asset-db-main.html"
+                            },
+                            {
+                                "name": "에셋 DB 모듈 (렌더러)",
+                                "link": "extension/api/asset-db/asset-db-renderer.html"
+                            },
+                            {
+                                "name": "에디터 모듈",
+                                "link": "extension/api/editor-framework/index.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "만든 확장기능 테스트하기",
+                        "link": "extension/test-your-package.html"
+                    },
+                    {
+                        "name": "레퍼런스",
+                        "submenu": [
+                            {
+                                "name": "package.json 레퍼런스",
+                                "link": "extension/reference/package-json-reference.html"
+                            },
+                            {
+                                "name": "메인메뉴 레퍼런스",
+                                "link": "extension/reference/main-menu-reference.html"
+                            },
+                            {
+                                "name": "패널 등록 레퍼런스",
+                                "link": "extension/reference/panel-json-reference.html"
+                            },
+                            {
+                                "name": "패널 생성 레퍼런스",
+                                "link": "extension/reference/panel-reference.html"
+                            },
+                            {
+                                "name": "커스텀 요소 레퍼런스",
+                                "link": "extension/reference/custom-element-reference.html"
+                            },
+                            {
+                                "name": "공용 IPC 메시지 레퍼런스",
+                                "link": "extension/reference/ipc-reference.html"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "고급 주제",
+                "link": "advanced-topics/index.html",
+                "submenu": [
+                    {
+                        "name": "Lua 엔진 지원",
+                        "link": "advanced-topics/build-to-lua.html"
+                    },
+                    {
+                        "name": "핫 업데이트",
+                        "link": "advanced-topics/hot-update.html"
+                    },
+                    {
+                        "name": "에셋매니저와 핫 업데이트",
+                        "link": "advanced-topics/assets-manager.html"
+                    },                       
+                    {
+                        "name": "i18n",
+                        "link": "advanced-topics/i18n.html"
+                    },
+                    {
+                        "name": "유저 데이터 저장소",
+                        "link": "advanced-topics/data-storage.html"
+                    },
+                    {
+                        "name": "엔진 커스터마이징 작업흐름",
+                        "link": "advanced-topics/engine-customization.html"
+                    },
+                    {
+                        "name": "더티 리전 최적화",
+                        "link": "advanced-topics/dirty-region.html"
+                    },
+                    {
+                        "name": "배치 렌더러 BMFont와 Sprite",
+                        "link": "advanced-topics/ui-auto-batch.html"
+                    },
+                    {
+                        "name": "자바스크립트와 자바 리플렉션",
+                        "link": "advanced-topics/java-reflection.html"
+                    },
+                    {
+                        "name": "자바스크립트와 Objective-C 리플렉션",
+                        "link": "advanced-topics/oc-reflection.html"
+                    }
+                ]
+            },
+            {
+                "name": "써드파티 SDK 통합",
+                "link": "sdk/index.html",
+                "submenu": [
+                    {
+                        "name": "AnySDK",
+                        "link": "sdk/anysdk-overview.html"
+                    },
+                    {
+                        "name": "AnySDK 프레임워크",
+                        "link": "sdk/anysdk/anysdk-framework.html"
+                    },
+                    {
+                        "name": "코코스 크리에이터에서 AnySDK 통합",
+                        "link": "sdk/anysdk/integrate-anysdk.html"
+                    }
+                ]
+            }
+        ]
+    }
+}
