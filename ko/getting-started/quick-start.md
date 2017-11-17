@@ -1,16 +1,16 @@
 # 퀵스타트 : 당신의 첫번째 게임을 만들어보세요
 
-지금 읽고 계시는 문서는 코코스 크리에이터의 에디터 패널, 기능 및 작업흐름에 대한 체계적인 소개가 포함되어 있습니다. 그러나 코코스 크리에이터를 통한 일반적인 게임 개발 흐름과 방법을 빨리 배우고 싶으시다면 이번 챕터가 필요합니다. 이 챕터의 튜토리얼을 마치신 후에는 게임을 만들기에 충분한 정보를 얻으실 수 있습니다. 그러나 각 기능 블럭과 완전한 작업흐름의 세부사항에 대해 이해하고 싶으시다면 가이드를 계속 읽으시는 것이 좋습니다.
+코코스 크리에이터의 에디터 패널, 기능 및 작업흐름에 대해서 체계적으로 학습하시는 것도 좋은 방법이지만 코코스 크리에이터를 통한 일반적인 게임 개발 흐름과 방법을 빠르게 경험하고 싶으시다면 이번 챕터를 추천합니다. 이 챕터의 튜토리얼을 마치신 후에는 게임을 만들기에 충분한 정보를 얻으실 수 있습니다. 하지만 각 기능 블럭과 작업흐름의 세부사항에 대해 이해하고 싶으시다면 다른 가이드들을 참조하시는 것이 좋습니다.
 
-이제 시작해보겠습니다! 튜토리얼을 따라 ** Pick up the Stars **라는 게임을 만듭니다. 이 게임에서 플레이어는 끊임없이 나타나는 별을 얻기 위해 멈추지 않는 ** 둔한 ** 몬스터를 조작합니다. 계속되는 가속은 플레이어에게 큰 도전을 가져올 것이며 친구들과 누가 가장 많은 별을 얻을 수 있는지 겨뤄볼 수 있습니다!
+이제 시작해보겠습니다! 튜토리얼을 따라 **Star Catcher**라는 게임을 만듭니다. 이 게임에서 플레이어는 끊임없이 나타나는 별을 얻기 위해 멈추지 않는 **귀여운(?)** 몬스터를 조작합니다. 가속 개념이 포함되어있는 조작법을 통해 플레이어에게 강력한 도전 욕구를 부여하여 친구들과 누가 가장 많은 별을 얻을 수 있는지 겨뤄볼 수 있습니다!
 
-아래의 링크에서 게임의 완성본을 플레이해보세요 :
+먼저 무엇보다 앞서서 아래의 링크에서 게임의 완성본을 플레이해보겠습니다 :
 
 http://fbdemos.leanapp.cn/star-catcher/
 
 ## 프로젝트와 리소스 준비하기
 
-미리 게임을 만들기 위한 모든 리소스를 준비해두었습니다. **원본 프로젝트**를 다운로드하셔서 원하는 곳에 압축을 푸시면 준비가 끝납니다:
+미리 게임을 만들기 위한 모든 리소스를 준비해두었습니다. 아래의 **원본 프로젝트**를 클릭하시면 압축 파일을 다운로드하실 수 있고 원하는 곳에 압축을 푸시면 준비가 끝납니다:
 
 [원본 프로젝트 다운로드](https://github.com/cocos-creator/tutorial-first-game/releases/download/v1.2/start_project.zip)
 
@@ -31,34 +31,34 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ## 게임 리소스 확인
 
-원본 프로젝트에는 필요한 모든 게임 리소스가 포함되어 있습니다. 따라서 다른 리소스를 가져올 필요가 없습니다. 리소스 가져오기에 대한 자세한 내용은 [에셋 작업흐름] (../ asset-workflow / index.md)에서 관련된 내용을 참조하십시오.
+원본 프로젝트에는 본 게임 개발에 필요한 모든 게임 리소스가 포함되어 있습니다. 따라서 별도로 다른 리소스를 준비하실 필요가 없습니다. 만약 다른 리소스를 추가하시려면 [에셋 작업흐름](../asset-workflow/index.md)에서 관련된 내용을 참조하십시오.
 
-다음으로 프로젝트의 리소스를 알아보겠습니다. 프로젝트에 할당된 모든 리소스가 표시되는 **Assets** 패널을 살펴보세요.
+다음으로 프로젝트의 리소스 구조에 대해 알아보겠습니다. 프로젝트에 할당된 모든 리소스가 표시되는 **Assets** 패널을 살펴보세요.
 
-프로젝트 리소스의 루트 디렉토리는 **assets**입니다. **assets**은 압축 해제한 원본 프로젝트의 `assets` 디렉토리와 일치합니다. 이 디렉토리에 있는 리소스만을 코코스 크리에이터에서 프로젝트로 가져와 사용할 수 있습니다.
+프로젝트 리소스의 루트 디렉토리는 **assets**입니다. **assets**은 압축 해제한 원본 프로젝트의 `assets` 디렉토리와 일치합니다. 코코스 크리에이터에서는 해당 디렉토리에 있는 리소스만을 프로젝트로 가져와 사용할 수 있습니다.
 
-**Assets** 패널은 모든 디렉토리의 계층 구조를 표시할 수 있습니다. ![folder](quick-start/folder.png) 아이콘은 폴더를 나타냅니다. 폴더의 왼쪽에 붙은 삼각형 아이콘을 클릭하면 폴더의 내용을 펼쳐서 확인하실 수 있습니다. 폴더를 완전히 펼치시면 **Assets** 패널이 아래와 같이 표시됩니다.
+**Assets** 패널은 모든 디렉토리의 계층 구조를 표시합니다. ![folder](quick-start/folder.png) 아이콘은 폴더를 나타냅니다. 폴더의 왼쪽에 붙은 삼각형 아이콘을 클릭하시면 폴더의 내용을 접거나 펼쳐서 확인하실 수 있습니다. 폴더를 완전히 펼치시면 **Assets** 패널이 아래와 같이 표시됩니다.
 
 ![assets overview](quick-start/assets_overview.png)
 
-모든 리소스는 프로젝트로 가져온 후 확장자의 차이로 다른 유형의 리소스로 인식되며 아이콘도 달라집니다. 다음으로 프로젝트의 리소스 종류와 용도에 대해 살펴보겠습니다.
+모든 리소스는 프로젝트로 추가된 후 확장자에 따라 다른 유형의 리소스로 인식되며 아이콘도 달라집니다. 다음으로 프로젝트의 리소스 종류와 용도에 대해 살펴보겠습니다.
 
-- ![audioclip](quick-start/audio-clip.png) 오디오 리소스, 일반적으로 MP3 파일입니다. `jump`와 `score`라는 오디오 파일은 각각 캐릭터가 점프하거나 점수를 얻을 때 재생됩니다.
-- ![bmfont](quick-start/bitmap-font.png) 비트맵 글꼴은 FNT 파일과 PNG 파일로 이루어집니다. 비트맵 글꼴는 게임 개발에서 일반적으로 사용되는 글꼴 리소스입니다. 자세한 내용은 [글꼴(Font)](../asset-workflow/font.md)을 참조해주세요
-- 다양한 종류의 축약된 아이콘이 있으며, 모두 이미지 리소스로서 일반적으로는 PNG 또는 JPG 파일입니다. 프로젝트로 가져오신 후에 이미지 파일은 **texture** 종류의 리소스로 처리됩니다. 그런 다음 이러한 리소스를 씬이나 컴포넌트의 속성으로 드래그하여 사용할 수 있습니다.
+- ![audioclip](quick-start/audio-clip.png) 오디오 리소스로서 일반적으로 MP3 파일입니다. `jump`와 `score`라는 오디오 파일은 각각 캐릭터가 점프하거나 점수를 얻을 때 재생될 예정입니다.
+- ![bmfont](quick-start/bitmap-font.png) 비트맵 글꼴은 FNT 파일과 PNG 파일로 이루어집니다. 비트맵 글꼴는 게임 개발에서 일반적으로 사용되는 글꼴 리소스로서 자세한 내용은 [글꼴(Font)](../asset-workflow/font.md)을 참조해주세요.
+- 이 외에도 다양한 종류의 축약된 아이콘이 보이는데, 모두 이미지 리소스로서 일반적으로는 PNG 또는 JPG 파일입니다. 프로젝트로 가져오신 후에 이미지 파일은 **texture** 종류의 리소스로 처리됩니다. 그런 리소스들을 씬이나 컴포넌트의 속성으로 드래그하여 사용할 수 있습니다.
 
 
 ## 게임 씬 만들기
 
-코코스 크리에이터에서 게임 씬은 게임을 개발할 때 게임의 내용을 구성하는 핵심이며, 또한 플레이어에게 제공되는 모든 게임 컨텐츠를 담는 매개체입니다. 게임 씬은 일반적으로 다음의 내용들을 포함합니다:
+코코스 크리에이터에서 게임 씬은 게임을 개발할 때 게임의 내용을 구성하는 핵심 요소이며, 또한 플레이어에게 제공되는 모든 게임 컨텐츠를 담는 매개체 역할을 합니다. 게임 씬은 일반적으로 다음의 내용들을 포함합니다:
 
-- 씬 이미지와 단어들 (스프라이트(Sprite), 라벨(Label))
+- 씬의 이미지와 텍스트 (스프라이트(Sprite), 라벨(Label))
 - 캐릭터
-- 컴포넌트 형태로 씬 노드에 연결된 게임 로직 스크립트
+- 컴포넌트 형태로 씬의 노드들에 연결된 게임 로직 스크립트
 
-플레이어가 게임을 실행하면 게임 씬이 로드됩니다. 이후에 컴포넌트를 포함한 게임 스크립트가 자동으로 실행되어 개발자가 설정한 다양한 로직이 실행됩니다. 따라서 리소스와는 별개로 게임 씬은 모든 컨텐츠 제작의 기초가 됩니다. 그러면 새로운 씬을 만들어보겠습니다.
+플레이어가 게임을 실행하면 먼저 게임 씬이 로드됩니다. 이후에 컴포넌트를 포함한 게임 스크립트가 자동으로 실행되어 개발자가 설정한 다양한 게임 로직들이 실행됩니다. 따라서 리소스와는 별개로 게임 씬은 모든 게임 개발의 기초가 됩니다. 그러면 새로운 씬을 만들어보겠습니다.
 
-1. **Assets** 패널에서 **assets** 디렉토리를 클릭하여 씬이 디렉토리 아래에 생성되도록 합니다
+1. **Assets** 패널에서 **assets** 디렉토리를 클릭하여 씬이 **assets** 디렉토리 아래에 생성되도록 합니다
 2. **Assets** 패널 왼쪽 상단에 있는 더하기 기호를 클릭하고 팝업 메뉴에서 **Scene**을 선택하세요
 ![create scene](quick-start/create_scene.png)
 3. `New Scene`이라는 이름을 가진 새로운 씬을 만들었습니다. 우클릭하여 **Rename**를 선택하셔서 `game`으로 이름을 바꿔보세요.
@@ -66,26 +66,26 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ### 캔버스 이해하기
 
-씬을 여신 후 현재 씬의 모든 노드(및 계층 관계)가 **Node Tree**에 표시됩니다. 새롭게 생성된 씬에는 `Canvas` 노드 하나만을 가집니다. **Canvas**는 캔버스 노드 또는 렌더링 루트 노드라고 부를 수 있습니다. **Canvas**를 클릭하시면 해당 속성이 **Properties** 패널에 표시됩니다.
+씬을 여신 후 현재 씬의 모든 노드(및 계층 관계)가 **Node Tree**에 표시됩니다. 새롭게 생성된 씬은 `Canvas` 노드 하나만을 가집니다. **Canvas**는 캔버스 노드 또는 렌더링 루트 노드라고 부를 수 있습니다. **Canvas**를 클릭하시면 해당 속성이 **Properties** 패널에 표시됩니다.
 
 ![canvas](quick-start/canvas.png)
 
-`Design Resolution` 속성은 게임의 디자인 해상도를 규정합니다. `Fit Height`와 `Fit Width`는 서로 다른 크기의 화면에서 실행될 때 **Canvas**를 다른 해상도로 조정하는 방법을 명시합니다.
+`Design Resolution` 속성은 게임의 디자인 해상도를 정의할 수 있습니다. `Fit Height`와 `Fit Width`는 서로 다른 크기의 화면에서 실행될 때 **Canvas**를 다른 해상도로 조정하는 방식을 명시합니다.
 
-다른 해상도로 조정하는 기능이 제공되므로 일반적으로 **Canvas** 아래의 씬에 이미지를 표시하는 모든 노드들이 배치됩니다. 이런 식으로 **Canvas**의 `scale` 속성이 변경되면 하위 노드인 모든 이미지가 함께 확대되어 서로 다른 화면의 크기에 맞게 조정됩니다.
+일반적으로 **Canvas** 아래에 이미지를 표시하는 모든 노드들이 배치됩니다. 이 때 **Canvas**의 `scale` 속성이 변경되면 하위 노드인 모든 이미지가 함께 변화되어 서로 다른 화면의 크기에 맞게 조정됩니다.
 
-자세한 내용은 [캔버스](../components/canvas.md)를 참조하십시오. 현재로서는 추가한 씬이 **Canvas** 노드 아래 위치한다는 것을 알아야 합니다.
+자세한 내용은 [캔버스](../components/canvas.md)를 참조하십시오. 현재로서는 추가한 씬이 **Canvas** 노드 아래 위치한다는 것을 아시면 됩니다.
 
 
 ## 씬 이미지 설정하기
 
 ### 배경화면 추가
 
-먼저 **Assets** 패널의 `assets/textures/background`의 경로에 따라 배경화면 이미지 리소스를 찾습니다. 그리고 해당 리소스를 클릭하여 **Arrangement editor**의 **Canvas** 노드로 드래그하십시오. **Canvas** 노드가 주황색으로 강조 표시될 때까지 마우스를 놓지 마세요. 이미지 리소스로서 `background`라는 서브 노드로서 추가됩니다.
+먼저 **Assets** 패널의 `assets/textures/background`의 경로에 따라 배경화면 이미지 리소스를 찾습니다. 그리고 해당 리소스를 클릭하여 **Node Tree**의 **Canvas** 노드로 드래그하십시오. **Canvas** 노드가 주황색으로 강조 표시될 때까지 마우스를 놓지 마시고 드래그앤 드랍하시면 이미지 리소스로서 `background`라는 서브 노드로서 추가됩니다.
 
 ![drag to canvas](quick-start/drag_to_canvas.png)
 
-이제 마우스 버튼을 놓으시면 **Canvas** 아래에 `background` 노드가 추가되는 것을 볼 수 있습니다. 노드를 추가하기 위해 리소스를 드래그하는 방법을 사용할 때 노드의 이름은 자동으로 이미지 리소소의 이름으로 명명됩니다.
+**Canvas** 아래에 `background` 노드가 추가되는 것을 보실 수 있습니다. 노드를 추가하기 위해 리소스를 드래그하는 방법을 사용하시면 노드의 이름은 자동으로 이미지 리소소의 이름으로 명명됩니다.
 
 씬을 편집하고 수정하실 때 메인 메뉴의 `document->save scene`을 사용하여 수정 사항을 즉시 저장할 수 있습니다. 또는 단축키로 저장하실 수도 있습니다: <kbd>Ctrl+S</kbd>（Windows）또는 <kbd>Cmd + S</kbd>（Mac）.
 
@@ -93,13 +93,13 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ![background1](quick-start/background1.png)
 
-**scene editor**에서 새롭게 추가된 배경 이미지를 볼 수 있습니다. 다음으로 전체 화면을 덮을 수 있도록 배경 이미지의 크기를 조정합니다.
+**scene editor**에서 새롭게 추가된 배경 이미지를 보실 수 있습니다. 이번에는 전체 화면을 덮을 수 있도록 배경 이미지의 크기를 조정해보겠습니다.
 
 먼저 `background` 노드를 클릭하여 메인 창의 좌측 상단 모서리에 있는 네번째 **rectangle tool**을 클릭하십시오:
 
 ![rect gizmo](quick-start/rect_gizmo.png)
 
-이 도구를 사용하여 이미지 노드의 크기를 편리하게 수정할 수 있습니다.**scene editor**에서 `background`의 왼쪽에 마우스를 놓고 클릭하고 `background`의 왼쪽이 디자인 해상도를 나타내는 파란색 프레임을 초과할 때까지 왼쪽으로 드래그합니다. 그런 다음 같은 방법을 사용하여 `background`의 오른쪽을 드래그합니다.
+이 도구를 사용하여 이미지 노드의 크기를 편리하게 수정할 수 있습니다. **scene editor**에서 `background`의 왼쪽의 파란색 동그라미를 클릭하시고 디자인 해상도를 나타내는 보라색 프레임을 초과할 때까지 왼쪽으로 드래그합니다. 그런 다음 같은 방법을 사용하여 `background`의 오른쪽을 드래그합니다.
 
 ![resize_background](quick-start/resize_background.png)
 
@@ -107,11 +107,11 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ![background finish](quick-start/background_finish.png)
 
-**rectangle tool**을 사용하여 배경 이미지의 크기를 수정하면, **Properties** 패널의 **Node**의 `Size` 속성이 그에 따라 변경되는 것을 보실 수 있습니다. 완료 후 배경 이미지의 크기는 대략 `(1360, 760)`입니다. `Size` 속성의 입력창에 숫자 값을 직접 입력하실 수도 있습니다. 그러면 **rectangle tool**과 동일한 효과를 얻으실 수 있습니다. 이 크기의 배경 이미지는 시장에 나와있는 모든 휴대폰의 전체 화면을 커버할 수 있습니다.
+**rectangle tool**을 사용하여 배경 이미지의 크기를 수정하면, **Properties** 패널의 **Node**의 `Size` 속성이 그에 따라 변경되는 것을 보실 수 있습니다. 완료 후 배경 이미지의 크기는 대략 `(1360, 760)`입니다. `Size` 속성의 입력창에 숫자 값을 직접 입력하실 수도 있습니다. 그러면 **rectangle tool**과 동일한 효과를 얻으실 수 있습니다. 이 크기의 배경 이미지는 현재 시장에 나와있는 모든 휴대폰의 전체 화면을 커버할 수 있습니다.
 
 ### 땅 추가
 
-우리의 주인공 캐릭터가 점프를 하기 위해서는 땅이 필요합니다. 바로 추가해봅시다. 배경 이미지와 같은 방법으로 **Assets** 패널의 `assets/textures/ground` 리소스를 **Node Tree**의 `Canvas`로 드래그합니다. 드래고 하실 때 새로 추가되는 노드와 `background` 노드의 순서 관계를 지정하실 수 있습니다. 리소스를 드래그한 상태에서 마우스 포인터를 `background` 아래쪽으로 움직이시면 `Canvas`에 주황색 프레임이 나타나고 삽입 위치를 나타내는 녹색선이 `background` 아래에 나타난 후에 마우스를 놓습니다. 이런 방식으로 `ground`가 `Canvas`의 하위 노드인 씬 계층 구조의 `background` 밑에 놓이게 됩니다.
+우리의 주인공 캐릭터가 점프를 하기 위해서는 땅이 필요합니다. 바로 추가해봅시다. 배경 이미지와 같은 방법으로 **Assets** 패널의 `assets/textures/ground` 리소스를 **Node Tree**의 `Canvas`로 드래그합니다. 드래그 하실 때 새로 추가되는 노드와 `background` 노드의 순서 관계를 지정하실 수 있습니다. 리소스를 드래그한 상태에서 마우스 포인터를 `background` 아래쪽으로 움직이시면 `Canvas`에 주황색 프레임이 나타나고 삽입 위치를 나타내는 녹색선이 `background` 아래에 나타난 후에 마우스를 놓습니다. 이런 방식으로 `ground`가 `Canvas`의 하위 노드인 씬 계층 구조의 `background` 밑에 놓이게 됩니다.
 
 **Node Tree**에서 아래 표시된 노드의 렌더링 순서가 위에 표시된 노드보다 우선합니다. `ground` 오브젝트가 **scene editor**에서 우선적으로 보이는 것을 확인하실 수 있습니다. 보이는 순서를 조정하기 위해서 언제든지 노드 관계를 변경하실 수 있습니다.
 
@@ -119,13 +119,13 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ![ground finish](quick-start/ground_finish.png)
 
-**rectangle tool** 외에도 **move tool** ![translate gizmo](quick-start/translate_gizmo.png)을 사용하여 노드의 위치를 바꾸실 수 있습니다. 노드에 표시된 **move tool**의 화살표를 누르신 채로 드래그하시면 한 번에 하나의 좌표축에서 노드의 위치를 변경하실 수 있습니다.
+**rectangle tool** 외에도 **move tool** ![translate gizmo](quick-start/translate_gizmo.png)을 사용하여 노드의 위치를 바꾸실 수 있습니다. 노드에 표시된 **move tool**의 화살표를 누르신 채로 드래그하시면 한 번에 하나씩 노드의 위치를 변경하실 수 있습니다.
 
 배경과 땅의 위치를 설정하실 때 정확한 숫자값이 필요하지 않으며 추측하여 드래그하시면 됩니다. 정확한 숫자 입력을 원하시는 경우 `position`와 `size` 값을 스크린샷에 따라 직접 입력하세요.
 
 ### 주인공 추가하기
 
-다음으로 우리의 주인공인 작은 몬스터가 등장합니다. **Assets** 패널의 assets/texture/PurpleMonster`를 **Node Tree**의 `Canvas`의 `ground` 아래로 드래그합니다. 이렇게 하면 주인공이 바로 화면에 표시됩니다.
+다음으로 우리의 주인공인 작은 몬스터가 등장합니다. **Assets** 패널의 `assets/texture/PurpleMonster`를 **Node Tree**의 `Canvas`의 `ground` 아래로 드래그합니다. 이렇게 하면 주인공이 바로 화면에 표시됩니다.
 
 씬 노드에서 주인공을 강조하시려면 새로 추가된 `PurpleMonster` 노드를 우클릭하셔서 이름을 `Player`로 바꿉니다.
 
@@ -140,9 +140,9 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 ## 주인공 스크립트 작성
 
-코코스 크리에이터 게임 개발의 핵심 아이디어 중 하나는 컨텐츠 제작과 기능 개발을 동시에 원활하게 진행하는 것입니다. 또한 예술적 컨텐츠에 중점을 두었습니다. 다음으로 함수의 흐름을 개발하는 스크립트를 작성하고 완성한 스크립트를 컨텐츠 작성자가 쉽게 사용할 수 있다는 사실을 알 수 있습니다.
+코코스 크리에이터 게임 개발의 핵심 아이디어 중 하나는 컨텐츠 제작과 기능 개발을 동시에 원활하게 진행하는 것으로서 여태까지는 컨텐츠 작성부분에 중점을 두었습니다. 다음으로 함수의 흐름을 개발하는 스크립트를 작성하고 완성한 스크립트를 컨텐츠 작성자가 쉽게 사용할 수 있다는 사실에 대해 알아보겠습니다.
 
-심지어 이전에 한번도 프로그래밍을 해보신 적이 없어도 걱정하실 필요가 없습니다. 튜토리얼에서 필요한 모든 코드들을 제공할 것입니다. 올바른 위치에 복사하여 붙여넣기만 하시면 됩니다. 그래도 어려우시면 프로그래밍 파트너에게 도움을 요청할 수 있습니다. 그러면 주인공이 움직이는 스크립트를 작성해봅시다.
+스크립트가 걱정되신다구요? 이전에 한번도 프로그래밍을 해보신 적이 없어도 걱정하실 필요가 없습니다. 튜토리얼에서 필요한 모든 코드들을 제공할 것이기 때문에 올바른 위치에 복사하여 붙여넣기만 하시면 됩니다. 그래도 어려우시면 프로그래밍 파트너에게 도움을 요청할 수 있습니다. 그러면 주인공이 움직이는 스크립트를 작성해봅시다.
 
 ### 스크립트 작성
 
@@ -175,7 +175,7 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 새로 추가된 속성은 주인공의 움직임을 규정합니다. 나중에 **Properties** 패널에서 숫자 값을 따로 설정할 수 있기 떄문에 지금은 코드에서의 숫자값을 신경 쓸 필요가 없습니다.
 
-이제 주인공 노드에 `Player` 컴포넌트를 추가 할 수 있습니다. **Node Tree**에서 `Player` 노드를 선택하고 ** Properties ** 패널에서 ** add component ** 버튼을 클릭하여 `add user's script component->Player`를 선택하여 `Player` 컴포넌트를 주인공 노드로 추가하십시오.
+이제 주인공 노드에 `Player` 컴포넌트를 추가 할 수 있습니다. **Node Tree**에서 `Player` 노드를 선택하고 **Properties** 패널에서 **add component** 버튼을 클릭하여 `add user's script component->Player`를 선택하여 `Player` 컴포넌트를 주인공 노드로 추가하십시오.
 
 ![add player component](quick-start/add_player_component.png)
 
@@ -185,7 +185,7 @@ http://fbdemos.leanapp.cn/star-catcher/
 
 jumpDuration의 단위는 초단위입니다. 다른 값의 단위는 픽셀입니다. `Player` 컴포넌트의 현재 설정은 다음과 같습니다: 주인공의 높이는 200 픽셀입니다. 가장 높은 지점으로 점프하는데 필요한 시간은 0.3초입니다. 최대 수평 이동 속도는 초당 400 픽셀입니다. 수평 가속도는 초당 350 픽셀입니다.
 
-이러한 모든 수치는 제안사항입니다. 나중에 게임을 실행할 때 환경설정에 따라서 **Properties** 패널의 숫자값을 수정할 수 있습니다. 코드를 따로 변경할 필요가 없습니다. 얼마나 편리합니까?
+이러한 모든 수치는 제안사항일 뿐입니다. 나중에 게임을 실행할 때 환경설정에 따라서 코드를 따로 변경할 필요 없이 **Properties** 패널의 숫자값을 수정할 수 있습니다. 얼마나 편리합니까?
 
 ### 점프와 이동을 위한 코드 작성
 
@@ -207,9 +207,8 @@ jumpDuration의 단위는 초단위입니다. 다른 값의 단위는 픽셀입�
     },
 ```
 
-여기에서 Cocos2d-js 엔진의 일부 액션은 주인공의 점프 애니메이션을 실현하는데 사용됩니다. 자세한 내용은 [Cocos2d-js API] (http://www.cocos2d-x.org/reference/html5-js/V3.8/index.html)를 확인하십시오.
+여기에서 Cocos2d-js 엔진의 액션은 주인공의 점프 애니메이션을 실현하는데 사용됩니다. 자세한 내용은 [Cocos2d-js API](http://www.cocos2d-x.org/reference/html5-js/V3.8/index.html)를 확인하십시오.
 
-Next invoke the newly added `setJumpAction` method in the `onLoad` method and implement `runAction` to start action:
 다음으로 `onLoad` 메소드에서 새로 추가된 `setJumpAction` 메소드를 호출하고 `runAction`을 통하여 액션을 시작합니다 :
 
 
@@ -222,18 +221,17 @@ Next invoke the newly added `setJumpAction` method in the `onLoad` method and im
     },
 ```
 
-`onLoad` 메소드는 장면을 로딩한 후 즉시 실행될 것입니다. 그래서 이후에 게임 초기화와 관련된 코드들을 넣을 것입니다.
+`onLoad` 메소드는 장면을 로딩한 후 즉시 실행되기 때문에 이후에 게임 초기화와 관련된 코드들을 넣을 것입니다.
 
-스크립트를 저장하시면 처음으로 게임을 실행해보실 수 있습니다!
+스크립트를 저장하시면 이제 처음으로 게임을 실행해보실 수 있습니다!
 
-코코스 크리에이터 에디터 상단의 **preview** 버튼을 클릭하십시오. 이 버튼은 "play" 버튼처럼 보입니다. 코코스 크리에이터가 자동으로 기본 브라우저를 열고 게임을 실행합니다. 이제 우리는 주인공을 보아야 합니다 --- 보라색 괴물(주인공)이 지속적으로 활발하게 점프하는 모습을 보실 수 있습니다.
+코코스 크리에이터 에디터 상단의 **preview** 버튼을 클릭하십시오. 이 버튼은 "play" 버튼처럼 보입니다. 코코스 크리에이터가 자동으로 기본 브라우저를 열고 게임을 실행합니다. 이제 우리는 주인공을 볼 수 있습니다 --- 보라색 괴물(주인공)이 지속적으로 활발하게 점프하는 모습을 보실 수 있습니다.
 
 ![preview](quick-start/preview_game.png)
 
 ### 이동 제어
 
-A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Below the `setJumpAction` method, add a new `setInputControl` method:
-같은 지점에서 계속 점프만 뛰는 주인공에게 다른 움직임을 추가해봅시다. <kbd>A</ kbd>와 <kbd>D</ kbd> 키를 사용하여 주인공의 점프 방향을 조작하는 키보드 입력을 추가합시다. `setJumpAction` 메소드 아래에 새로운`setInputControl` 메소드를 추가하십시오 :
+같은 지점에서 계속 점프만 뛰는 주인공에게 다른 움직임을 추가해봅시다. <kbd>A</kbd>와 <kbd>D</kbd> 키를 사용하여 주인공의 점프 방향을 조작하는 키보드 입력을 추가합시다. `setJumpAction` 메소드 아래에 새로운`setInputControl` 메소드를 추가하십시오 :
 
 ```js
 // Player.js
@@ -316,9 +314,9 @@ A main character that can only jump foolishly up and down on the same spot is no
     },
 ```
 
-`update`는 씬을 불러온 후에 각 프레임마다 한번씩 호출됩니다. 일반적으로 여기에는 빈번하게 계산되거나 적시에 업데이트 되어야하는 로직을 넣습니다. 우리 게임에서 키보드 입력으로 가속 방향을 얻은 후에, 각 프레임에 대해 `update '에서 주인공의 속도와 위치를 계산합니다.
+`update`는 씬을 불러온 후에 각 프레임마다 한번씩 호출됩니다. 일반적으로 여기에는 빈번하게 계산되거나 적시에 업데이트 되어야하는 로직을 넣습니다. 우리 게임에서 키보드 입력으로 가속 방향을 얻은 후에, 각 프레임에 대해 `update'에서 주인공의 속도와 위치를 계산합니다.
 
-스크립트를 저장한 후에 **preview**를 클릭하여 최신 결과를 확인할 수 있습니다. 브라우저에서 미리보기를 연 후 마우스로 게임 씬을 클릭하십시오 (브라우저의 제한 때문에 키보드 입력은 게임 씬을 클릭 하신 후에만 허용될 수 있습니다). <kbd>A</ kbd> 또는 <kbd>D</ kbd> 키를 누르면 주인공을 조작하여 좌/우로 움직입니다!
+스크립트를 저장한 후에 **preview**를 클릭하여 최신 결과를 확인할 수 있습니다. 브라우저에서 미리보기를 연 후 마우스로 게임 씬을 클릭하십시오(브라우저의 제한 때문에 키보드 입력은 게임 씬을 클릭 하신 후에만 허용될 수 있습니다). <kbd>A</kbd> 또는 <kbd>D</kbd> 키를 누르면 주인공을 조작하여 좌/우로 움직입니다!
 
 이동속도가 너무 느린가요? 주인공이 너무 낮게 점프하나요? 점프하는 시간을 늘리고 싶으신가요? 문제 없습니다! `Player` 컴포넌트에 대해 다른 속성 값을 설정하면 됩니다. 아래는 참조용 설정입니다:
 
@@ -337,7 +335,7 @@ A main character that can only jump foolishly up and down on the same spot is no
 
 ### 프리팹 만들기
 
-반복적으로 생성해야하는 노드들은 **Prefab** 리소스로 저장할 수 있습니다. 이 리소스는 노드의 동적 생성을 위한 템플릿이 될 수 있습니다. **Prefab**에 대한 자세한 내용은 [Prefab] (../ asset-workflow / prefab.md)을 참조하십시오.
+반복적으로 생성해야하는 노드들은 **Prefab** 리소스로 저장할 수 있습니다. 이 리소스는 노드의 동적 생성을 위한 템플릿이 될 수 있습니다. **Prefab**에 대한 자세한 내용은 [Prefab](../asset-workflow/prefab.md)을 참조하십시오.
 
 먼저 **Assets** 패널의 `assets/textures/star` 리소스를 씬으로 드래그하십시오. **Node Tree**의 아무 곳이나 괜찮습니다. 프리팹을 만들기 위한 플랫폼으로서만 씬을 필요로 하고 생성 후에는 해당 노드를 삭제할 것이기 때문입니다.
 
@@ -410,9 +408,9 @@ A main character that can only jump foolishly up and down on the same spot is no
 ```js
 // Game.js
     onLoad: function () {
-        // obtain the anchor point of ground level on the y axis
-        this.groundY = this.ground.y + this.ground.height/2;   // this.ground.top may also work
-        // generate a new star
+        // 땅과의 접촉지점 계산
+        this.groundY = this.ground.y + this.ground.height/2;   // this.ground.top 또한 가능합니다
+        // 새로운 별 생성
         this.spawnNewStar();
     },
 
@@ -437,7 +435,7 @@ A main character that can only jump foolishly up and down on the same spot is no
     }
 ```
 
-스크립트를 저장한 후에 **preview** 버튼을 클릭합니다. 그러면 브라우저에서 게임이 시작된 후 별이 동적으로 생성되는 것을 볼 수 있습니다! 동일한 방법으로 게임에서 Prefab 템플릿을 사용하여 사전 설정된 노드를 동적으로 생성할 수 있습니다.
+스크립트를 저장한 후에 **preview** 버튼을 클릭합니다. 그러면 브라우저에서 게임이 시작된 후 별이 동적으로 생성되는 것을 볼 수 있습니다! 동일한 방법으로 다른 게임에서도 Prefab 템플릿을 사용하여 사전 설정된 노드를 동적으로 생성할 수 있습니다.
 
 ![spawn star](quick-start/spawn_star.png)
 
@@ -746,11 +744,11 @@ A main character that can only jump foolishly up and down on the same spot is no
 - 별 수집시 더욱 멋진 효과 추가
 - 터치 스크린 장치 용 입력 제어 추가
 
-위의 모든 측면에서 개선 된 버전의 경우 [개선 버전 프로젝트] (https://github.com/cocos-creator/tutorial-first-game/releases/download/v1.2/polished_project.zip)를 다운로드할 수 있습니다. 관련해서는 여기에서 자세히 설명하지 않습니다.
+위의 모든 측면에서 개선 된 버전의 경우 [개선 버전 프로젝트](https://github.com/cocos-creator/tutorial-first-game/releases/download/v1.2/polished_project.zip)를 다운로드할 수 있습니다. 관련해서는 여기에서 자세히 설명하지 않습니다.
 
-또한 완성된 게임을 서버에서 공개하여 친구들과 공유하고 싶다면 [미리보기 빌드] (basics/preview-build.md) 부분을 참고하세요.
+또한 완성된 게임을 서버에서 공개하여 친구들과 공유하고 싶다면 [미리보기 빌드](basics/preview-build.md) 부분을 참고하세요.
 
-오늘의 튜토리얼은 여기서 끝납니다. 즉시 두 번째 코코스 크리에이트 게임을 만들시려면 이 가이드를 계속 읽으십시오. 이 퀵 스타트 튜토리얼에 대한 질문이 있으면 [Github 튜토리얼 창고] (https://github.com/cocos-creator/tutorial-first-game)에서 관련 의견을 제시하실 수 있습니다.
+오늘의 튜토리얼은 여기서 끝납니다. 즉시 두 번째 코코스 크리에이트 게임을 만들시려면 이 가이드를 계속 읽으십시오. 이 퀵 스타트 튜토리얼에 대한 질문이 있으면 [Github 튜토리얼 창고](https://github.com/cocos-creator/tutorial-first-game)에서 관련 의견을 제시하실 수 있습니다.
 
 ---
 
