@@ -19,9 +19,43 @@ http://fbdemos.leanapp.cn/star-catcher/
 [완성 프로젝트 다운로드](https://github.com/cocos-creator/tutorial-first-game/releases/download/v1.2/complete_project.zip)
 
 
-## 원본 프로젝트 열기
+### Cocos Creator 설치하기
 
 코코스 크리에이터를 아직 설치하지 않으셨다면 [설치](install.md) 섹션을 참조하세요.
+
+### VS Code 설치하기
+
+Cocos Creator의 내장 스크립트 에디터가 삭제되었기 때문에 별도의 스크립트 에디터를 설치해서 사용하셔야 합니다.
+
+일반적으로 가장 추천하는 에디터는 VS Code입니다. [Visual Studio Code](https://code.visualstudio.com/) （이하 VS Code）는 가벼운 크로스 플랫폼 개발 환경입니다. 자바스크립트 편집 및 디버깅을 위한 훌륭한 기능을 갖추고 있으며 VS Code를 위한 확장 기능을 통해 API 자동 완성 및 기본 디버깅 지원이 제공됩니다.
+
+[VS Code 홈페이지](https://code.visualstudio.com/)로 가셔서 다운로드 버튼을 클릭하시면 소프트웨어 패키지를 다운받으실 수 있습니다.
+
+맥 사용자는 원하는 위치에 압축을 푸시고 `Visual Studio Code.app`을 더블 클릭해서 실행하세요.
+
+윈도우 사용자는 `VSCodeSetup.exe`로 설치하시면 됩니다.
+
+### 코코스 크리에이터 API 확장기능 설치
+
+코코스 크리에이터에서 당신의 프로젝트를 여신 후, 메인 메뉴의 `Developer/Install VS Code Extension`를 선택하세요.
+
+**Console** 패널에서 `VS Code extension installed to ...`를 확인하실 수 있습니다.
+
+### 당신의 프로젝트에서 API 소스 만들기
+
+구문 강조와 자동완성을 위해 프로젝트 폴더에 API 소스를 생성해야 합니다.
+
+메인 메뉴에서 `Developer/Update VS Code API Source`를 선택합니다. 프로젝트의 루트(`assets` 폴더와 같은 레벨)에 `creator.d.ts` 파일을 생성합니다. 완료되면 `API data generated and copied to ...`는 메시지를 보실 수 있습니다.
+
+이 작업은 API 소스가 업데이트되었거나 어떤 이유로든 프로젝트에 `creator.d.ts` 파일이 없는 경우에만 필요합니다.
+
+**주의사항 ** VS Code 0.10.11 이후로 프로젝트가 작동하려면 `jsconfig.json`도 필요합니다. 위의 명령은 `creator.d.ts`와 함께 미리 정의된 `jsconfig.json` 파일을 프로젝트에 복사합니다. [VS Code 자바스크립트 가이드](http://code.visualstudio.com/docs/languages/javascript)에 따라`jsconfig.json`을 커스터마이징해보세요.
+
+### 외부 스크립트 에디터 설정
+
+메인 메뉴의 `Cocos Creator/Preferences/Data Editor/External Script Editor/Browse` 후 VS Code을 선택하신 후 Save and Close 버튼을 누릅니다.
+
+## 원본 프로젝트 열기
 
 1. 먼저, 코코스 크리에이터를 시작하시고 **Open other projects**를 선택하세요
 2. 폴더를 선택하기 위한 팝업 입력창에서 다운로드 및 압축 해제된 `start_project`를 선택하시고 **Open** 버튼을 클릭하세요
