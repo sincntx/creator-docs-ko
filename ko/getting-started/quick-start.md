@@ -19,7 +19,7 @@ http://fbdemos.leanapp.cn/star-catcher/
 [완성 프로젝트 다운로드](https://github.com/cocos-creator/tutorial-first-game/releases/download/v1.2/complete_project.zip)
 
 
-### Cocos Creator 설치하기
+## Cocos Creator 설치하기
 
 코코스 크리에이터를 아직 설치하지 않으셨다면 [설치](install.md) 섹션을 참조하세요.
 
